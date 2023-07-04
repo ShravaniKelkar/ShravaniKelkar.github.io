@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+  transition: border-color 0.3s ease;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.toggle-label input[type="checkbox"] {
+  display: none;  
+}
+
+.toggle-label .toggle-switch {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: #333;   
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-label .toggle-switch:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 2.5px;
+  left: 2.5px;
+  transition: transform 0.3s ease;
+}
+
+.toggle-label input[type="checkbox"]:checked + .toggle-switch {
+  background-color: grey;
+}
+
+.toggle-label input[type="checkbox"]:checked + .toggle-switch:before {
+  transform: translateX(25px);
+}
+
+
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: rgb(43,43,43);
+  color: #f1f1f1;
+}
+
+body.dark-mode .navbar {
+  background-color: #eee;
+}
+
+body.dark-mode .navbar a {
+  color: #f1f1f1;
+}
+
+body.dark-mode .toggle-label {
+  color: #000;
+}
+
+body.dark-mode .toggle-label .toggle-switch {
+  background-color: #000;
+}
+
+body.dark-mode {
+  background-color: #333;
+}
+
+body.dark-mode .navbar {
+  background-color: #000;
+}
+
+body.dark-mode .navbar a {
+  color: #fff;
+  border-color: #fff;
+}
+
+body.dark-mode .toggle-label {
+  color: #fff;
+}
+
+body.dark-mode .toggle-label .toggle-switch {
+  background-color: #ccc;
+}

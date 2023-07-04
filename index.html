@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Shravani Kelkar |  Home </title>
+ <link rel="stylesheet" href="style.css">
+ </head>
+
+<body>
+
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About Me</a>
+    <a href="#">Skills</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact Me</a>
+
+    <label class="toggle-label">
+      <input type="checkbox" id="toggle-switch">
+      <span class="toggle-switch"></span>
+    </label>
+  </nav>
+  
+  <h2> 
+  Hey There, Shravani Here!
+  </h2>
+
+
+
+  <script>
+    const toggleSwitch = document.getElementById('toggle-switch');
+    toggleSwitch.addEventListener('change', function() {
+      if (this.checked) {
+        document.body.classList.add('dark-mode');
+      } else {
+        document.body.classList.remove('dark-mode');
+      }
+    });
+  </script>
+
+
+</body>
+</html>
