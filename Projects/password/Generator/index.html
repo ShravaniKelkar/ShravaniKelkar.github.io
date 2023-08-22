@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <title> Password Generator </title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul class="list">
+            <li><a href="../index.html">  HOME </a> </li>   &emsp; &emsp; &emsp;  
+            <li><a href="../Checker/index.html"> Check Your Password Strength </a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard" title="button">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label>Password Length</label>
+                <input type="number" id="length" min="3" max="20" value="10">
+            </div>
+            
+            <div class="setting">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" id="uppercase" title="box1">
+            </div>
+
+            <div class="setting">
+                <label>Include lowercase letters</label>
+                <input type="checkbox" id="lowercase" title="box2">
+            </div>
+
+            <div class="setting">
+                <label>Include numbers</label>
+                <input type="checkbox" id="numbers" title="box3">
+             </div>
+
+            <div class="setting">
+                <label>Include symbols</label>
+                <input type="checkbox" id="symbols" title="box4">
+            </div>
+        </div>
+
+        <button class="btn btn-large" id="generate">
+            Generate Password
+        </button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
